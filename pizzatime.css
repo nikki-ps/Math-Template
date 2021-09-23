@@ -1,24 +1,33 @@
 .Pizza_Q1 {
   position: relative;
-  background-image:linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url("https://s18670.pcdn.co/wp-content/uploads/Zoom-Background-Classroom-800x456.png");
+  background-image:linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.3)), url("https://s18670.pcdn.co/wp-content/uploads/Zoom-Background-Classroom-800x456.png");
   background-size: cover;
-  font-family: 'Indie Flower', cursive;;
+  font-family: 'Indie Flower', cursive;
 }
 .Pizza_Q2 {
-  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("https://thumbs.dreamstime.com/b/cute-cartoon-pizza-seamless-pattern-background-illustration-vector-94221964.jpg");
+  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.4)), url("https://thumbs.dreamstime.com/b/cute-cartoon-pizza-seamless-pattern-background-illustration-vector-94221964.jpg");
   background-size: 10%;
 }
 .Pizza_Q3 {
-  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("https://wallpaperaccess.com/full/844722.jpg");
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.5)), url("https://wallpaperaccess.com/full/844722.jpg");
   background-size: 20%;
 }
 .pizza_choice {
-  padding: 10px;
+  padding: 7px;
+}
+.Pizza_Q1 label {
+  display:block;
+  text-align: center;
+}
+.Pizza_Q1 label input[type="radio"]{
+  margin: 0 auto;
 }
 .Q3_input {
   margin:0 auto;
   text-align: center;
   display: block;
+  font-size: 130%;
+  font-family: 'Press Start 2P', cursive;
 }
 .pizza {
   margin:0 auto;
@@ -31,10 +40,12 @@
   padding: 10px;
 }
 .multiple-pizza {
-  font-size: 200%;
+  font-size: 150%;
+  font-family: 'Press Start 2P', cursive;
+  background-color: rgba(255, 230, 255, 0.6);
 }
 
-input[type="time"]{
+.Pizza_Q2 input[type="time"]{
   display: block;
   margin:0 auto;
 }
@@ -49,10 +60,10 @@ h2>span{
   background: #FD9597;
   color: #FFFFFF;
   font-family: 'Fugaz One';
-  text-shadow: #44090D 1px 1px, #44090D -0px 0px, #44090D -1px 1px, #44090D -2px 2px, #44090D -3px 3px, #44090D -4px 4px, #44090D -5px 5px;
+  text-shadow: #44090D 1px 1px, #44090D -0px 0px, #44090D -1px 1px, #44090D -2px 2px, #44090D -3px 3px, #44090D -4px 4px;
 }
 .button {
-background-color: #4CAF50; /* Green */
+background-color: #4CAF50; 
 border: none;
 color: white;
 padding: 15px 32px;
