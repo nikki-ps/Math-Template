@@ -73,3 +73,19 @@ display: block;
 margin:0 auto;
 font-size: 16px;
 }
+.correct {
+  font-size: 200%;
+  margin:0 auto;
+  text-align: center;
+  display: block;
+  color: lightgreen;
+  text-shadow: rgb(0, 68, 0) 1px 1px, rgb(0, 68, 0) -0px 0px, rgb(0, 68, 0) -1px 1px, rgb(0, 68, 0) -2px 2px, rgb(0, 68, 0) -3px 3px, rgb(0, 68, 0) -4px 4px;
+}
+.incorrect {
+  font-size: 200%;
+  margin:0 auto;
+  text-align: center;
+  display: block;
+  color: lightpink;
+  text-shadow: rgb(80, 0, 0) 1px 1px,rgb(80, 0, 0) -0px 0px,rgb(80, 0, 0) -1px 1px, rgb(80, 0, 0) -2px 2px, rgb(80, 0, 0) -3px 3px, rgb(80, 0, 0) -4px 4px;
+}
