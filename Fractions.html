@@ -55,15 +55,15 @@
     <h2 style="text-align:center; font-size: 200%;"><span>3. How many of each topping are on the pizza?</span></h2>
     <img style="display: block; margin:0 auto; width: 20%; height: 20%" src="https://i.imgur.com/xhvMzng.png">
     <form>
-      <label class="Q3_input"> Mushrooms: </label>
+      <label class="Q3_input"> Mushrooms: </label> <h3 class="incorrect" id="Q3_IncorrectMush"> </h3>  
       <input type="number" id="Q3M" style="display: block; margin:0 auto;" value="0">
-      <label class="Q3_input"> Tomatoes: </label>
+      <label class="Q3_input"> Tomatoes: </label> <h3 class="incorrect" id="Q3_IncorrectTom"> </h3> 
       <input type="number" id="Q3T" style="display: block; margin:0 auto;" value="0"> 
-      <label class="Q3_input"> Green Bell Peppers:</label>
+      <label class="Q3_input"> Green Bell Peppers:</label> <h3 class="incorrect" id="Q3_IncorrectGBP"> </h3> 
       <input type="number" id="Q3G" style="display: block; margin:0 auto;" value="0">
-      <label class="Q3_input"> Olives: </label>
+      <label class="Q3_input"> Olives: </label> <h3 class="incorrect" id="Q3_IncorrectOlive"> </h3> 
       <input type="number" id="Q3O" style="display: block; margin:0 auto;" value="0">
-      <label class="Q3_input"> Pepporoni: </label>
+      <label class="Q3_input"> Pepporoni: </label> <h3 class="incorrect" id="Q3_IncorrectPep"> </h3> 
       <input type="number" id="Q3P" style="display: block; margin:0 auto;" value="0">
     </form>
     <br>
@@ -71,65 +71,6 @@
     <h3 class="correct" id="Q3_Correct"> </h3>
     <h3 class="incorrect" id="Q3_Incorrect"> </h3>  
   </div>
+  <script src="MathFractionsJS.js"></script>
 </body>
-
-<script>
-  function checkButton1() 
-  {  
-    document.getElementById("Q1_Correct").innerHTML="";
-    document.getElementById("Q1_Incorrect").innerHTML="";  
-    if(document.getElementById('Q1A').checked) 
-    {   
-      document.getElementById("Q1_Incorrect").innerHTML = "Incorrect! This is a whole pizza.";
-    }   
-    else if(document.getElementById('Q1B').checked) 
-    {   
-        document.getElementById("Q1_Correct").innerHTML = "Correct!";
-    }
-    else if(document.getElementById('Q1C').checked) 
-    {   
-        document.getElementById("Q1_Incorrect").innerHTML = "Incorrect! This pizza is 5/6.";
-    }
-    else if(document.getElementById('Q1D').checked) 
-    {   
-        document.getElementById("Q1_Incorrect").innerHTML = "Incorrect! One of these pizza's is 1/2.";    
-    }  
-    else 
-    {   
-        document.getElementById("Q1_Incorrect").innerHTML = "You have not selected any response.";   
-    }   
-  }  
-  function checkButton2()
-  {
-     document.getElementById("Q2_Correct").innerHTML="";
-    document.getElementById("Q2_Incorrect").innerHTML="";  
-    var x = document.getElementById("Q2Time").value;
-    if (x == "19:25")
-    {
-      document.getElementById("Q2_Correct").innerHTML = "Correct! The pizza would arrive at 7:25PM."
-    }
-    else
-    {
-      document.getElementById("Q2_Incorrect").innerHTML = "Incorrect!"
-    }
-  }
-  function checkButton3()
-  {
-    document.getElementById("Q3_Correct").innerHTML="";
-    document.getElementById("Q3_Incorrect").innerHTML="";  
-    var m = document.getElementById("Q3M").value;
-    var t = document.getElementById("Q3T").value;
-    var g = document.getElementById("Q3G").value;
-    var o = document.getElementById("Q3O").value;
-    var p = document.getElementById("Q3P").value;
-    if((m=="6") && (t=="5") && (g=="6") && (o=="7") && (p=="4"))
-    {
-      document.getElementById("Q3_Correct").innerHTML = "Correct!";
-    }
-    else
-    {
-      document.getElementById("Q3_Incorrect").innerHTML = "Inorrect!";
-    }
-  }
-</script> 
 </html>
