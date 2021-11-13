@@ -14,3 +14,7 @@ test('checks for question 2', () => {
  test('checks for question 3', () => {
     expect(MathFractionsJS.checkButton3()).toBe(null)
  });
+
+ test('checks for question 4', () => {
+    expect(MathFractionsJS.checkButton4()).toBe(null)
+ });
